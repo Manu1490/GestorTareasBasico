@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LinearLayout acomoda los elementos uno debajo del otro -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título principal de la pantalla -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestor de Tareas"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo donde el usuario escribe una tarea -->
+    <EditText
+        android:id="@+id/editTextTarea1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe una tarea"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Botón que luego usaremos para guardar la tarea -->
+    <Button
+        android:id="@+id/btnGuardar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Lista donde se mostrarán las tareas agregadas -->
+    <ListView
+        android:id="@+id/listViewTareas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
