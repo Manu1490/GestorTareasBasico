@@ -22,7 +22,9 @@
         android:id="@+id/editTextTarea1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="text"
         android:hint="Escribe una tarea"
+        android:minHeight="48dp"
         android:layout_marginBottom="8dp" />
 
     <!-- Botón que luego usaremos para guardar la tarea -->
